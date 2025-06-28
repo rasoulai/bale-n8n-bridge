@@ -7,7 +7,7 @@ app.use(express.json());
 app.post("/bale-webhook", async (req, res) => {
   try {
     console.log("Received from Bale:", req.body);
-    await axios.post("https://rasoulai101.app.n8n.cloud/webhook/bale-webhook", req.body);
+    await axios.post("https://abc123.ngrok.io/webhook/bale-webhook", req.body);
     res.status(200).json({ ok: true });
   } catch (err) {
     console.error("Error:", err.message);
